@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Unit Converter</title>
+</head>
+<link rel="stylesheet" href="/static/style.css">
+
+<body>
+    <h1>Unit Converter</h1>
+    <form action="/convert" method="post">
+        <label for="value">Value:</label>
+        <input type="text" id="value" name="value" required>
+        <br>
+        <label for="type">Conversion Type:</label>
+        <select id="type" name="type" required>
+            <option value="temperature">Temperature (Celsius to Fahrenheit)</option>
+            <option value="length">Length (Meters to Feet)</option>
+            <option value="weight">Weight (Kilograms to Pounds)</option>
+        </select>
+        <br>
+        <button type="submit">Convert</button>
+    </form>
+</body>
+</html>
